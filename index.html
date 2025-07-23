@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://bns-group.ru/assets/klandvolk/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://bns-group.ru/assets/klandvolk/dist/assets/owl.theme.default.min.css">
 
+  <!-- <link rel="stylesheet" href="./styles.css"> -->
   <!-- styles.css -->
   <style>
     *,
@@ -159,29 +160,44 @@
       position: relative;
       display: flex;
       align-items: flex-start;
+      justify-content: center;
       width: 100%;
       height: 100%;
-      max-width: 1680px;
+      max-width: 1920px;
+      overflow: hidden;
+    }
+
+    @media (min-width: 1760px) {
+      .background-inner {
+        justify-content: space-between;
+      }
     }
 
     .background-left,
     .background-right {
-      position: absolute;
+      position: relative;
       height: 100%;
-      width: 400px;
-      background-position: top;
+      max-height: 1500px;
+      width: 525px;
+      min-width: 525px;
       background-repeat: no-repeat;
       background-size: contain;
     }
 
     .background-left {
-      background-image: url("./bg-left.png");
+      background-image: url('./bg-left.png');
+      background-position: top right;
       left: 0;
     }
 
     .background-right {
-      background-image: url("./bg-right.png");
+      background-image: url('./bg-right.png');
+      background-position: top left;
       right: 0;
+    }
+
+    .background-center {
+      min-width: 700px;
     }
 
     .container {
@@ -270,7 +286,7 @@
       cursor: pointer;
       width: 100%;
       padding: 10px;
-      border-radius: 10px;
+      border-radius: 5px;
       background-color: #00174f;
       color: #fff;
       font-size: 24px;
@@ -334,7 +350,7 @@
       width: 100%;
       margin: 0 auto 40px auto;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      border-radius: 12px;
+      border-radius: 10px;
     }
 
     .modal__header {
@@ -582,6 +598,7 @@
   <div class="background">
     <div class="background-inner">
       <div class="background-left"></div>
+      <div class="background-center"></div>
       <div class="background-right"></div>
     </div>
   </div>
@@ -616,36 +633,19 @@
       <div class="tab">
         <div class="title"><span class="arrow"></span><span class="name">Условия конкурса</span></div>
         <div class="info">
-          <p>Станьте участником конкурса и получите возможность выиграть одну из трех моделей из лимитированной капсулы
-            &laquo;Caf&eacute; de Karl&raquo;: сумку, платок или кепку.</p>
-          <p>&nbsp;- Совершите покупку на сумму от 10 000 руб. в магазинах Karl Lagerfeld в ТРЦ &laquo;Авиапарк&raquo; и
-            &laquo;Метрополис&raquo;</p>
-          <p>&nbsp;- Зарегистрируйте чек из магазина на сайте акции</p>
-          <p>&nbsp;- Станьте одним из трех победителей конкурса</p>
-          <p>Сроки проведения конкурса: с 10 марта 2025 года по 10 апреля 2025 года.</p>
+          <p>Текст...</p>
         </div>
       </div>
       <div class="tab">
         <div class="title"><span class="arrow"></span><span class="name">Итоги</span></div>
         <div class="info">
-          <p>Подведение итогов конкурса: 25 апреля 2025 года. Победители из списка участников будут выбраны с помощью
-            генератора случайных чисел.</p>
-          <p>Призы можно будет получить лично в магазине Karl Lagerfeld в ТРЦ &laquo;Авиапарк&raquo; в течение месяца с
-            момента подведения итогов конкурса.</p>
+          <p>Текст...</p>
         </div>
       </div>
-
       <div class="tab">
         <div class="title"><span class="arrow"></span><span class="name">Контакты</span></div>
         <div class="info">
-          <p> Магазин Karl Lagerfeld<br> <a href="https://aviapark.com/karl-lagerfeld/map?levelCode=1&roomId=1039"
-              target="_blank"> г. Москва, ТРЦ «Авиапарк» (1 этаж)</a><br> тел.: 7 (499) 951-50-85 </p>
-          <p> Магазин Karl Lagerfeld, женская коллекция<br> <a href="https://metropolis.moscow/shops/karl-lagerfeld/"
-              target="_blank"> г. Москва, ТРЦ «Метрополис» (1 этаж)</a><br> тел.: 7 (499) 951-7927 </p>
-          <p> Кафе-кондитерская «Волконский»<br> <a href="https://aviapark.com/volkonskii/map?levelCode=2&roomId=694"
-              target="_blank">г. Москва, ТРЦ «Авиапарк» (2 этаж)</a><br> тел.: 8 963 754 16 20 </p>
-          <p> Кафе-кондитерская «Волконский»<br> <a href="https://metropolis.moscow/food/set-pekaren-volkonskii/"
-              target="_blank"> г. Москва, ТРЦ «Метрополис» (1 этаж)</a><br> тел.: 7 (926) 316-5564 </p>
+          <p>Текст...</p>
         </div>
       </div>
     </div>
@@ -653,18 +653,17 @@
       <div></div>
     </div>
     <div class="images owl-carousel">
-      <div class="image"> <img src="https://bns-group.ru/assets/img/karl_lagerfeld_wolkonsky_9.jpg" alt=""> </div>
-      <div class="image"> <img src="https://bns-group.ru/assets/img/karl_lagerfeld_wolkonsky_6.jpg" alt=""> </div>
-      <div class="image"> <img src="https://bns-group.ru/assets/img/karl_lagerfeld_wolkonsky_10.jpg" alt=""> </div>
+      <div class="image"> <img src="./certificate-1.jpg" alt="Сертификат на 50000 рублей"> </div>
+      <div class="image"> <img src="./certificate-2.jpg" alt="Сертификат на футболку"> </div>
     </div>
     <div class="footer">
       <p>
-        <a href="/uploads/files/KL_wolkonsky_oferta.pdf" target="_blank">
+        <a href="#" target="_blank">
           <span>Правила проведения Акции</span>
         </a>
       </p>
       <p>
-        <a href="/uploads/files/pravila-obrabotki-i-khraneniya-personalnykh-dannykh.pdf" target="_blank">
+        <a href="#" target="_blank">
           <span>Правила обработки и хранения Персональных данных</span>
         </a>
       </p>
@@ -682,16 +681,15 @@
           <button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
         </header>
         <div class="modal__content" id="modal-form-content">
-          <form class="modal__form form" id="callback-form">
+          <form class="modal__form form" id="form">
             <div class="form__row">
-              <input type="text" id="callback-name" name="callback-name" class="form__input" placeholder="ФИО *"
+              <input type="text" id="name" name="name" class="form__input" placeholder="ФИО *" required>
+              <input type="tel" id="phone" name="phone" class="form__input" placeholder="Телефон *" maxlength="18"
                 required>
-              <input type="tel" id="callback-phone" name="callback-phone" class="form__input" placeholder="Телефон *"
-                maxlength="18" required>
               <button type="submit" class="form__button">Участвовать</button>
             </div>
             <p class="form__label">Нажимая на кнопку «Участвовать» вы соглашаетесь с
-              <a href="/uploads/files/pravila-obrabotki-i-khraneniya-personalnykh-dannykh.pdf" target="_blank">
+              <a href="#" target="_blank">
                 политикой обработки персональных данных
               </a>
             </p>
@@ -708,13 +706,8 @@
   <script src="https://bns-group.ru/assets/klandvolk/dist/owl.carousel.min.js"></script>
 
   <script type="module">
-    /*IMask(document.getElementById('phone-mask'),{mask: '+{7}(000)000-00-00'});*/
-    // const showBtn = document.querySelector('#klandvolk .showBtn')
-    // const form = document.querySelector('#klandvolk form')
-    // const formText = document.querySelector('#klandvolk #formText')
-    // const counter = document.querySelector('#klandvolk #counter')
-    // const notification = document.querySelector('#klandvolk #notification')
-    // const phoneInput = document.querySelector('#klandvolk #phone-mask')
+    // const form = document.querySelector('#form')
+    // const phoneInput = document.querySelector('#phone')
     /*IMask(phoneInput,{mask: '+{7}(000)000-00-00'});*/
 
     // form.addEventListener('submit', async (event) => {
@@ -734,7 +727,7 @@
     //   }
     // })
 
-    const tabs = document.querySelector('#klandvolk .tabs')
+    const tabs = document.querySelector('.tabs')
 
     tabs.addEventListener('click', (event) => {
       const target = event.target
