@@ -364,7 +364,7 @@ a {
 	position: relative;
 	background-color: #fff;
 	padding: 30px;
-	max-width: 700px;
+	max-width: 900px;
 	width: 100%;
 	margin: 0 auto 40px auto;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -459,7 +459,7 @@ a {
 
 .form__row .form__input,
 .form__row .form__button {
-	width: 33%;
+	width: 25%;
 	border-radius: 5px;
 }
 
